@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="WithCucumber" tests="4" started="4" failures="0" errors="0" ignored="0">
+  <testsuite name="runner.TestRunner" time="8.067">
+    <testsuite name="Feature: Login" time="8.067">
+      <testsuite name="Scenario: Go to AutomationPractice Page" time="8.067">
+        <testcase name="Given The user is on the homepage" classname="Scenario: Go to AutomationPractice Page" time="3.927"/>
+        <testcase name="When The user taps on login" classname="Scenario: Go to AutomationPractice Page" time="4.038"/>
+        <testcase name="When Enters username and Password" classname="Scenario: Go to AutomationPractice Page" time="0.096"/>
+        <testcase name="Then Should show successful login" classname="Scenario: Go to AutomationPractice Page" time="0.006"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

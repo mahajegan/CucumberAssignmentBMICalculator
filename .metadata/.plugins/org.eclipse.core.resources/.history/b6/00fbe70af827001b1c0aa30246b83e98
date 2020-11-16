@@ -1,0 +1,10 @@
+
+Feature: Login
+
+  @testcase1
+  Scenario: Go to BMI Calculator Online
+    Given Go to URL https://www.calculator.net
+    And Get the title of the Page
+    When I click on BMI Calculator
+    And Get the title of the Page
+    

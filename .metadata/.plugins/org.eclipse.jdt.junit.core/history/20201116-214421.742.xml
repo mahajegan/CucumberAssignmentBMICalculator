@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="WithCucumber" tests="30" started="30" failures="0" errors="0" ignored="0">
+  <testsuite name="runner.TestRunner" time="76.642">
+    <testsuite name="Feature: Calculate BMI" time="76.642">
+      <testsuite name="Scenario Outline: Calculation of BMI" time="76.642">
+        <testsuite name="Examples:" time="76.642">
+          <testsuite name="| 10 | 127 | 40 |" time="9.964">
+            <testcase name="Given I open the Calculator.Net URL" classname="| 10 | 127 | 40 |" time="6.067"/>
+            <testcase name="And Click on BMI Calculator Link" classname="| 10 | 127 | 40 |" time="1.101"/>
+            <testcase name="When I Enter Age &quot;10&quot;, Height &quot;127&quot;, Weight &quot;40&quot;" classname="| 10 | 127 | 40 |" time="1.54"/>
+            <testcase name="And Click on Calculate button" classname="| 10 | 127 | 40 |" time="0.097"/>
+            <testcase name="Then I validate the BMI Result" classname="| 10 | 127 | 40 |" time="1.159"/>
+            <testcase name="And Close the Browser" classname="| 10 | 127 | 40 |" time="0.0"/>
+          </testsuite>
+          <testsuite name="| 30 | 156 | 70 |" time="8.004">
+            <testcase name="Given I open the Calculator.Net URL" classname="| 30 | 156 | 70 |" time="4.974"/>
+            <testcase name="And Click on BMI Calculator Link" classname="| 30 | 156 | 70 |" time="0.994"/>
+            <testcase name="When I Enter Age &quot;30&quot;, Height &quot;156&quot;, Weight &quot;70&quot;" classname="| 30 | 156 | 70 |" time="0.878"/>
+            <testcase name="And Click on Calculate button" classname="| 30 | 156 | 70 |" time="0.1"/>
+            <testcase name="Then I validate the BMI Result" classname="| 30 | 156 | 70 |" time="1.056"/>
+            <testcase name="And Close the Browser" classname="| 30 | 156 | 70 |" time="0.0"/>
+          </testsuite>
+          <testsuite name="| 25 | 152 | 55 |" time="9.238">
+            <testcase name="Given I open the Calculator.Net URL" classname="| 25 | 152 | 55 |" time="5.648"/>
+            <testcase name="And Click on BMI Calculator Link" classname="| 25 | 152 | 55 |" time="0.896"/>
+            <testcase name="When I Enter Age &quot;25&quot;, Height &quot;152&quot;, Weight &quot;55&quot;" classname="| 25 | 152 | 55 |" time="0.921"/>
+            <testcase name="And Click on Calculate button" classname="| 25 | 152 | 55 |" time="0.066"/>
+            <testcase name="Then I validate the BMI Result" classname="| 25 | 152 | 55 |" time="1.707"/>
+            <testcase name="And Close the Browser" classname="| 25 | 152 | 55 |" time="0.0"/>
+          </testsuite>
+          <testsuite name="| 20 | 160 | 45 |" time="6.624">
+            <testcase name="Given I open the Calculator.Net URL" classname="| 20 | 160 | 45 |" time="3.446"/>
+            <testcase name="And Click on BMI Calculator Link" classname="| 20 | 160 | 45 |" time="1.046"/>
+            <testcase name="When I Enter Age &quot;20&quot;, Height &quot;160&quot;, Weight &quot;45&quot;" classname="| 20 | 160 | 45 |" time="0.838"/>
+            <testcase name="And Click on Calculate button" classname="| 20 | 160 | 45 |" time="0.051"/>
+            <testcase name="Then I validate the BMI Result" classname="| 20 | 160 | 45 |" time="1.243"/>
+            <testcase name="And Close the Browser" classname="| 20 | 160 | 45 |" time="0.0"/>
+          </testsuite>
+          <testsuite name="| 35 | 160 | 70 |" time="6.666">
+            <testcase name="Given I open the Calculator.Net URL" classname="| 35 | 160 | 70 |" time="3.136"/>
+            <testcase name="And Click on BMI Calculator Link" classname="| 35 | 160 | 70 |" time="1.051"/>
+            <testcase name="When I Enter Age &quot;35&quot;, Height &quot;160&quot;, Weight &quot;70&quot;" classname="| 35 | 160 | 70 |" time="1.399"/>
+            <testcase name="And Click on Calculate button" classname="| 35 | 160 | 70 |" time="0.055"/>
+            <testcase name="Then I validate the BMI Result" classname="| 35 | 160 | 70 |" time="1.018"/>
+            <testcase name="And Close the Browser" classname="| 35 | 160 | 70 |" time="0.007"/>
+          </testsuite>
+        </testsuite>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

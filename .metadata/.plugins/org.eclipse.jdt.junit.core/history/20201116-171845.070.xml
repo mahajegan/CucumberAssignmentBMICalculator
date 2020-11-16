@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="WithCucumber" tests="15" started="15" failures="0" errors="0" ignored="12">
+  <testsuite name="runner.TestRunner" time="2.251">
+    <testsuite name="Feature: Use of Online Calculator" time="2.251">
+      <testsuite name="Scenario: Go to BMI Calculator Online" time="2.178">
+        <testcase name="Given Go to URL https://www.calculator.net" classname="Scenario: Go to BMI Calculator Online" time="0.014"/>
+        <testcase name="And Get the title of the Page" classname="Scenario: Go to BMI Calculator Online" time="2.161"/>
+        <testcase name="When I click on BMI Calculator" classname="Scenario: Go to BMI Calculator Online" time="0.003"/>
+      </testsuite>
+      <testsuite name="Scenario Outline: Calculation of BMI" time="0.042">
+        <testsuite name="Examples:" time="0.042">
+          <testsuite name="| 25 | 57 | 60 |" time="0.001" incomplete="true">
+            <skipped/>
+            <testcase name="Given In the BMI Calculator Page" classname="| 25 | 57 | 60 |" time="0.001" ignored="true"/>
+            <testcase name="Given I want to enter Age 25" classname="| 25 | 57 | 60 |" time="0.0" ignored="true"/>
+            <testcase name="And I enter the height 57" classname="| 25 | 57 | 60 |" time="0.0" ignored="true"/>
+            <testcase name="And I enter the weight 60" classname="| 25 | 57 | 60 |" time="0.0" ignored="true"/>
+            <testcase name="When I Click on Calculate button" classname="| 25 | 57 | 60 |" time="0.0" ignored="true"/>
+            <testcase name="Then I verify the &lt;bmiResult&gt;" classname="| 25 | 57 | 60 |" time="0.0" ignored="true"/>
+          </testsuite>
+          <testsuite name="| 30 | 59 | 65 |" time="0.001" incomplete="true">
+            <skipped/>
+            <testcase name="Given In the BMI Calculator Page" classname="| 30 | 59 | 65 |" time="0.0" ignored="true"/>
+            <testcase name="Given I want to enter Age 30" classname="| 30 | 59 | 65 |" time="0.0" ignored="true"/>
+            <testcase name="And I enter the height 59" classname="| 30 | 59 | 65 |" time="0.001" ignored="true"/>
+            <testcase name="And I enter the weight 65" classname="| 30 | 59 | 65 |" time="0.0" ignored="true"/>
+            <testcase name="When I Click on Calculate button" classname="| 30 | 59 | 65 |" time="0.0" ignored="true"/>
+            <testcase name="Then I verify the &lt;bmiResult&gt;" classname="| 30 | 59 | 65 |" time="0.0" ignored="true"/>
+          </testsuite>
+        </testsuite>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

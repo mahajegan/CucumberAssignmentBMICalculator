@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="WithCucumber" tests="9" started="9" failures="0" errors="2" ignored="4">
+  <testsuite name="runner.TestRunner" time="3.648">
+    <testsuite name="Feature: Use of Online Calculator" time="3.648">
+      <testsuite name="Scenario: Go to BMI Calculator Online" time="3.61">
+        <testcase name="Given Go to URL https://www.calculator.net" classname="Scenario: Go to BMI Calculator Online" time="0.02"/>
+        <testcase name="And Get the title of the Page" classname="Scenario: Go to BMI Calculator Online" time="3.587"/>
+        <testcase name="When I click on BMI Calculator" classname="Scenario: Go to BMI Calculator Online" time="0.003"/>
+      </testsuite>
+      <testsuite name="Scenario Outline: Calculation of BMI" time="0.0">
+        <testsuite name="Examples:" time="0.0">
+          <testsuite name="| 30 | 180 | 60 |" time="0.0" incomplete="true">
+            <error>java.lang.NullPointerException&#13;
+	at stepDefinition.Examples.i_want_to_enter_Age(Examples.java:25)&#13;
+	at ✽.Given I want to enter Age 30(src/test/java/features/calculator.feature:15)&#13;
+&#13;
+</error>
+            <testcase name="Given In the BMI Calculator Page" classname="| 30 | 180 | 60 |" time="0.0"/>
+            <testcase name="Given I want to enter Age 30" classname="| 30 | 180 | 60 |" time="0.0">
+              <error>java.lang.NullPointerException&#13;
+	at stepDefinition.Examples.i_want_to_enter_Age(Examples.java:25)&#13;
+	at ✽.Given I want to enter Age 30(src/test/java/features/calculator.feature:15)&#13;
+&#13;
+</error>
+            </testcase>
+            <testcase name="And I enter the height 180" classname="| 30 | 180 | 60 |" time="0.0" ignored="true"/>
+            <testcase name="And I enter the weight 60" classname="| 30 | 180 | 60 |" time="0.0" ignored="true"/>
+            <testcase name="When I Click on Calculate button" classname="| 30 | 180 | 60 |" time="0.0" ignored="true"/>
+            <testcase name="Then I verify the &lt;bmiResult&gt;" classname="| 30 | 180 | 60 |" time="0.0" ignored="true"/>
+          </testsuite>
+        </testsuite>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

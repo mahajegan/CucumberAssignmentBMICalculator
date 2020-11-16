@@ -1,0 +1,22 @@
+
+Feature: Calculate BMI
+
+  @testcase1
+  Scenario: Calculation of BMI
+    Given I open the Calculator.Net URL
+    And Click on BMI Calculator Link
+    When I Enter Age, Height, Weight
+    And Click on Calculate button
+    Then I validate the BMI Result
+    And Close the Browser
+
+  @tag2
+  Scenario Outline: Title of your scenario outline
+    Given I want to write a step with <name>
+    When I check for the <value> in step
+    Then I verify the <status> in step
+
+    Examples: 
+      | name  | value | status  |
+      | name1 |     5 | success |
+      | name2 |     7 | Fail    |

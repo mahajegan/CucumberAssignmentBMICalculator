@@ -1,0 +1,26 @@
+package stepDefinition;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.When;
+
+public class CalculatorStepDefinition {
+
+	@Given("^Go to URL https://www\\.calculator\\.net$")
+	public void go_to_URL_https_www_calculator_net() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	    
+	}
+
+	@Given("^Get the title of the Page$")
+	public void get_the_title_of_the_Web_Page() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	    
+	}
+
+	@When("^I click on BMI Calculator$")
+	public void i_click_on_BMI_Calculator() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	  
+	}
+
+}

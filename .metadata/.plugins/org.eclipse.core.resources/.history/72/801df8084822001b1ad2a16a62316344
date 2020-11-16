@@ -1,0 +1,21 @@
+package runner;
+
+import org.junit.runner.RunWith;
+
+import cucumber.api.CucumberOptions;
+import cucumber.api.junit.Cucumber;
+
+@RunWith(Cucumber.class)
+@CucumberOptions(
+		features = "src/test/java/features/TagsDemo.feature",
+		glue = {"stepDefinition"},
+		//tags = {"@SmokeTest"} //Single Tag
+		//tags = {"@SmokeTest","@RegressionTest"} //And Condition to execute both tags
+		//tags = {"@SmokeTest,@RegressionTest"} //OR Condition
+		//tags = {"@FunctionalTest"} // Executing feature tag
+		tags = {"@FunctionalTest","~@RegressionTest"} //Skipping scenario
+		)
+
+public class TestRunner {
+
+}

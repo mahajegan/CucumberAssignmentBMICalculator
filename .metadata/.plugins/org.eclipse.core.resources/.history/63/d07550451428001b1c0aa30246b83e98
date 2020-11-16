@@ -1,0 +1,24 @@
+
+@tag
+Feature: Use of Online Calculator
+
+  @testcase1
+  Scenario: Go to BMI Calculator Online
+    Given Go to URL https://www.calculator.net
+    And Get the title of the Page
+    When I click on BMI Calculator
+    
+
+  @testcase2
+  Scenario Outline: Calculation of BMI
+  	Given In the BMI Calculator Page
+    Given I want to enter Age <age>
+    And I enter the height <height>
+    And I enter the weight <weight>
+    When I Click on Calculate button
+    Then I verify the <bmiResult>
+
+    Examples: 
+      | age  | height | weight  |
+      | 25 |     57 | 60 |
+      | 30 |     59 | 65 |

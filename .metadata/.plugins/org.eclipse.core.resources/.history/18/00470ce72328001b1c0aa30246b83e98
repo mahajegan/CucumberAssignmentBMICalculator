@@ -1,0 +1,17 @@
+
+Feature: Calculate BMI
+
+  @testcase1
+  Scenario Outline: Calculation of BMI
+    Given I open the Calculator.Net URL
+    And Click on BMI Calculator Link
+    When I Enter Age "<age>", Height "<height>", Weight "<weight>"
+    And Click on Calculate button
+    Then I validate the BMI Result
+    And Close the Browser
+
+ 
+    Examples: 
+      | age  | height | weight  |
+      | 30 |     150 | 60 |
+      | 40 |     170 | 70    |

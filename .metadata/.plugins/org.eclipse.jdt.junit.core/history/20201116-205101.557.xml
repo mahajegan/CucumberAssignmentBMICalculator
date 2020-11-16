@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="WithCucumber" tests="12" started="12" failures="0" errors="0" ignored="0">
+  <testsuite name="runner.TestRunner" time="18.436">
+    <testsuite name="Feature: Calculate BMI" time="18.436">
+      <testsuite name="Scenario Outline: Calculation of BMI" time="18.436">
+        <testsuite name="Examples:" time="18.436">
+          <testsuite name="| 30 | 150 | 60 |" time="6.401">
+            <testcase name="Given I open the Calculator.Net URL" classname="| 30 | 150 | 60 |" time="6.393"/>
+            <testcase name="And Click on BMI Calculator Link" classname="| 30 | 150 | 60 |" time="0.0"/>
+            <testcase name="When I Enter Age 30, Height 150, Weight 60" classname="| 30 | 150 | 60 |" time="0.008"/>
+            <testcase name="And Click on Calculate button" classname="| 30 | 150 | 60 |" time="0.0"/>
+            <testcase name="Then I validate the BMI Result" classname="| 30 | 150 | 60 |" time="0.0"/>
+            <testcase name="And Close the Browser" classname="| 30 | 150 | 60 |" time="0.0"/>
+          </testsuite>
+          <testsuite name="| 40 | 170 | 70 |" time="3.265">
+            <testcase name="Given I open the Calculator.Net URL" classname="| 40 | 170 | 70 |" time="3.251"/>
+            <testcase name="And Click on BMI Calculator Link" classname="| 40 | 170 | 70 |" time="0.001"/>
+            <testcase name="When I Enter Age 40, Height 170, Weight 70" classname="| 40 | 170 | 70 |" time="0.001"/>
+            <testcase name="And Click on Calculate button" classname="| 40 | 170 | 70 |" time="0.001"/>
+            <testcase name="Then I validate the BMI Result" classname="| 40 | 170 | 70 |" time="0.002"/>
+            <testcase name="And Close the Browser" classname="| 40 | 170 | 70 |" time="0.008"/>
+          </testsuite>
+        </testsuite>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

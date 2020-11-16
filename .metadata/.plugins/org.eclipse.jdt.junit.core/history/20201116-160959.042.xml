@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="WithCucumber" tests="4" started="4" failures="0" errors="2" ignored="3">
+  <testsuite name="runner.TestRunner" time="0.002">
+    <testsuite name="Feature: Login" time="0.002">
+      <testsuite name="Scenario: Go to AutomationPractice Page" time="0.002" incomplete="true">
+        <error>java.lang.IllegalStateException: The driver executable does not exist: D:\SeleniumBrowserDriversJarFiles\chromedriver_win32\chromedriver.exe&#13;
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)&#13;
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)&#13;
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)&#13;
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)&#13;
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)&#13;
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)&#13;
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)&#13;
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)&#13;
+	at stepDefinition.LoginStepDefinition.the_user_is_on_the_homepage(LoginStepDefinition.java:18)&#13;
+	at ✽.Given The user is on the homepage(src/test/java/features/login.feature:6)&#13;
+&#13;
+</error>
+        <testcase name="Given The user is on the homepage" classname="Scenario: Go to AutomationPractice Page" time="0.001">
+          <error>java.lang.IllegalStateException: The driver executable does not exist: D:\SeleniumBrowserDriversJarFiles\chromedriver_win32\chromedriver.exe&#13;
+	at com.google.common.base.Preconditions.checkState(Preconditions.java:585)&#13;
+	at org.openqa.selenium.remote.service.DriverService.checkExecutable(DriverService.java:146)&#13;
+	at org.openqa.selenium.remote.service.DriverService.findExecutable(DriverService.java:141)&#13;
+	at org.openqa.selenium.chrome.ChromeDriverService.access$000(ChromeDriverService.java:35)&#13;
+	at org.openqa.selenium.chrome.ChromeDriverService$Builder.findDefaultExecutable(ChromeDriverService.java:159)&#13;
+	at org.openqa.selenium.remote.service.DriverService$Builder.build(DriverService.java:355)&#13;
+	at org.openqa.selenium.chrome.ChromeDriverService.createDefaultService(ChromeDriverService.java:94)&#13;
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)&#13;
+	at stepDefinition.LoginStepDefinition.the_user_is_on_the_homepage(LoginStepDefinition.java:18)&#13;
+	at ✽.Given The user is on the homepage(src/test/java/features/login.feature:6)&#13;
+&#13;
+</error>
+        </testcase>
+        <testcase name="When The user taps on login" classname="Scenario: Go to AutomationPractice Page" time="0.0" ignored="true"/>
+        <testcase name="When Enters username and Password" classname="Scenario: Go to AutomationPractice Page" time="0.0" ignored="true"/>
+        <testcase name="Then Should show successful login" classname="Scenario: Go to AutomationPractice Page" time="0.0" ignored="true"/>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

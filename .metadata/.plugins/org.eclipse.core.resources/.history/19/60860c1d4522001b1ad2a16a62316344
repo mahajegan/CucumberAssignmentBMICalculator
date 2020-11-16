@@ -1,0 +1,31 @@
+Feature: TagsDemo
+
+Scenario: Scenario 1
+Given User should be in Home Page
+
+Scenario: Scenario 2
+Given User is on the landing page
+
+Scenario: Scenario 3
+Given User should be in Home Page
+
+Scenario: Scenario 4
+Given User is on the landing page
+
+Scenario: Scenario 5
+Given User should be in Home Page
+
+Scenario: Scenario 6
+Given User is on the landing page
+
+Scenario: Scenario 7
+Given User should be in Home Page
+
+Scenario: Scenario 8
+Given User is on the landing page
+
+Scenario: Scenario 9
+Given User should be in Home Page
+
+Scenario: Scenario 10
+Given User is on the landing page

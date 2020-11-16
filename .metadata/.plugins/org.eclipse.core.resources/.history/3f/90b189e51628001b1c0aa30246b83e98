@@ -1,0 +1,58 @@
+package stepDefinition;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class Examples {
+	
+	WebDriver driver;
+	
+	@Given("^In the BMI Calculator Page$")
+	public void in_the_BMI_Calculator_Page() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+		System.out.println("BMI Page Test");
+		//System.out.println("BMI title: " +driver.getTitle());
+		
+	}
+
+	@Given("^I want to enter Age (\\d+)$")
+	public void i_want_to_enter_Age(CharSequence[] arg1) throws Throwable {
+		WebElement age = driver.findElement(By.id("cage"));
+		age.clear();
+		age.sendKeys(arg1);
+	    
+	}
+
+	@Given("^I enter the height (\\d+)$")
+	public void i_enter_the_height(int arg2) throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+		WebElement height = driver.findElement(By.id("cheightmeter"));
+		height.clear();
+		height.sendKeys(arg2);
+	}
+
+	@Given("^I enter the weight (\\d+)$")
+	public void i_enter_the_weight(int arg1) throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	    
+	}
+
+	@When("^I Click on Calculate button$")
+	public void i_Click_on_Calculate_button() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	    
+	}
+
+	@Then("^I verify the <bmiResult>$")
+	public void i_verify_the_bmiResult() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+	    
+	}
+
+
+}

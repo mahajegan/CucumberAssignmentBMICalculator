@@ -1,0 +1,44 @@
+package stepDefinition;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.Then;
+import cucumber.api.java.en.When;
+
+public class LoginStepDefinition {
+	
+	WebDriver driver;
+    @Given("^The user is on the homepage$")
+    public void the_user_is_on_the_homepage() throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        System.setProperty("webdriver.chrome.driver", "C:\\Users\\MahalakshmiKathamuth\\eclipse-selenium-sdet\\Jars\\chromedriver.exe");
+        driver = new ChromeDriver();
+        driver.get("http://automationpractice.com/index.php");
+    }
+
+@When("^The user taps on login$")
+    public void the_user_taps_on_login() throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        driver.findElement(By.xpath("//*[@class='login']")).click();
+    }
+    @When("^Enters username and Password$")
+    public void enters_username_and_Password() throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        driver.findElement(By.name("email")).sendKeys("blog.cucumber@gmail.com");
+        driver.findElement(By.name("passwd")).sendKeys("Cucumber@blog");
+        driver.findElement(By.name("SubmitLogin")).click();
+    }
+    @Then("^Should show successful login$")
+    public void should_show_successful_login() throws Throwable {
+        // Write code here that turns the phrase above into concrete actions
+        if (driver.findElement(By.xpath(
+                "//*[text()='Welcome to your account. Here you can manage all of your personal information and orders.']"))
+                .isDisplayed() == true) {
+            System.out.println("Login Successfull");
+        }
+    }
+
+}

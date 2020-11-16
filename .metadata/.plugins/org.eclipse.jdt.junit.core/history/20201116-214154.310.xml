@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><testrun name="TestRunner" project="WithCucumber" tests="6" started="6" failures="0" errors="0" ignored="0">
+  <testsuite name="runner.TestRunner" time="18.879">
+    <testsuite name="Feature: Calculate BMI" time="18.879">
+      <testsuite name="Scenario Outline: Calculation of BMI" time="18.879">
+        <testsuite name="Examples:" time="18.879">
+          <testsuite name="| 10 | 127 | 40 |" time="18.879">
+            <testcase name="Given I open the Calculator.Net URL" classname="| 10 | 127 | 40 |" time="6.882"/>
+            <testcase name="And Click on BMI Calculator Link" classname="| 10 | 127 | 40 |" time="2.485"/>
+            <testcase name="When I Enter Age &quot;10&quot;, Height &quot;127&quot;, Weight &quot;40&quot;" classname="| 10 | 127 | 40 |" time="5.266"/>
+            <testcase name="And Click on Calculate button" classname="| 10 | 127 | 40 |" time="1.11"/>
+            <testcase name="Then I validate the BMI Result" classname="| 10 | 127 | 40 |" time="2.481"/>
+            <testcase name="And Close the Browser" classname="| 10 | 127 | 40 |" time="0.655"/>
+          </testsuite>
+        </testsuite>
+      </testsuite>
+    </testsuite>
+  </testsuite>
+</testrun>

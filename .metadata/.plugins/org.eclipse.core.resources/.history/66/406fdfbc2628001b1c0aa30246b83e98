@@ -1,0 +1,36 @@
+package stepDefinition;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import cucumber.api.java.en.Given;
+import cucumber.api.java.en.When;
+
+public class CalculatorStepDefinition {
+
+	WebDriver driver;
+	@Given("^Go to URL https://www\\.calculator\\.net$")
+	public void go_to_URL_https_www_calculator_net() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\MahalakshmiKathamuth\\eclipse-selenium-sdet\\Jars\\chromedriver.exe");
+        driver = new ChromeDriver();
+        driver.get("https://www.calculator.net/");
+        driver.manage().window().maximize();    
+	}
+
+	@Given("^Get the title of the Page$")
+	public void get_the_title_of_the_Web_Page() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+		String LoginTitle = driver.getTitle();
+        System.out.println(LoginTitle);
+	}
+
+	@When("^I click on BMI Calculator$")
+	public void i_click_on_BMI_Calculator() throws Throwable {
+	    // Write code here that turns the phrase above into concrete actions
+		driver.findElement(By.linkText("BMI Calculator")).click();
+	}
+ 
+}

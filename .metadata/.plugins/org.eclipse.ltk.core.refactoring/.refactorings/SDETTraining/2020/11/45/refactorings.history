@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;SampleNGTest.java&apos; to &apos;SDETTraining/src/main/java/TestNGSample&apos;&#x0D;&#x0A;- Original project: &apos;SDETTraining&apos;&#x0D;&#x0A;- Destination element: &apos;SDETTraining/src/main/java/TestNGSample&apos;&#x0D;&#x0A;- Original element: &apos;withoutCucumber.SampleNGTest.java&apos;&#x0D;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src\/main\/java&lt;TestNGSample" element1="/src\/main\/java&lt;withoutCucumber{SampleNGTest.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1604380261168" units="1" version="1.0"/>
+</session>
